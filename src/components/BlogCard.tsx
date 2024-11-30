@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 interface BlogCardProps {
   title: string;
@@ -6,15 +7,21 @@ interface BlogCardProps {
   date: string;
   tag: string;
   className?: string;
+  animationDelay?: string;
 }
 
-const BlogCard = ({ title, excerpt, date, tag, className }: BlogCardProps) => {
+const BlogCard = ({ title, excerpt, date, tag, className, animationDelay }: BlogCardProps) => {
+  // Convert title to URL-friendly slug
+  const slug = title.toLowerCase().replace(/\s+/g, '-');
+
   return (
-    <article 
+    <Link 
+      to={`/article/${slug}`}
       className={cn(
-        "glass-card p-6 transition-all duration-300 hover:translate-y-[-4px] hover:shadow-lg cursor-pointer group",
+        "glass-card p-6 transition-all duration-300 hover:translate-y-[-4px] hover:shadow-lg block group",
         className
       )}
+      style={animationDelay ? { animationDelay } : undefined}
     >
       <div className="flex flex-col h-full">
         <span className="text-xs font-medium text-primary/80 mb-2">{date}</span>
@@ -27,11 +34,11 @@ const BlogCard = ({ title, excerpt, date, tag, className }: BlogCardProps) => {
         <p className="text-primary-foreground/80 text-sm flex-grow">
           {excerpt}
         </p>
-        <div className="mt-4 flex items-center text-sm text-primary hover:text-secondary transition-colors">
+        <div className="mt-4 flex items-center text-sm text-primary group-hover:text-secondary transition-colors">
           Read More →
         </div>
       </div>
-    </article>
+    </Link>
   );
 };
 
