@@ -39,29 +39,29 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-20 md:pt-32 pb-12 md:pb-20 px-4 md:px-6">
         <div className="container mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary mb-6 md:mb-8">
             <Computer size={18} />
             <span>iOS Developer & Tech Writer</span>
           </div>
-          <h1 className="font-display text-4xl md:text-6xl font-bold mb-6 animate-fade-up">
+          <h1 className="font-display text-3xl md:text-6xl font-bold mb-4 md:mb-6 animate-fade-up">
             Exploring the Future of
             <span className="text-secondary"> iOS Development</span>
           </h1>
-          <p className="text-primary-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-12 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <p className="text-primary-foreground/80 text-base md:text-xl max-w-2xl mx-auto mb-8 md:mb-12 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Deep insights into iOS development, Swift programming, and mobile technology trends
           </p>
         </div>
       </section>
 
       {/* Blog Posts Section */}
-      <section id="blog" className="py-20 px-6 bg-background/50">
+      <section id="blog" className="py-12 md:py-20 px-4 md:px-6 bg-background/50">
         <div className="container mx-auto">
-          <h2 className="font-display text-3xl font-bold mb-12 text-center">
+          <h2 className="font-display text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center">
             Latest Articles
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {blogPosts.map((post, index) => (
               <BlogCard
                 key={index}
@@ -75,7 +75,7 @@ const Index = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-20 px-4 md:px-6">
         <div className="container mx-auto">
           <Newsletter />
         </div>
