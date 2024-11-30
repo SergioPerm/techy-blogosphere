@@ -1,8 +1,28 @@
-# Welcome to your Lovable project
+# TechSpace - iOS Development Blog
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/a620a91d-5d34-47f3-a596-0935426a5b53
+**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+
+## Tech Stack
+
+This project is built with React, TypeScript, and Tailwind CSS, featuring:
+
+- React with TypeScript for type-safe development
+- Tailwind CSS for modern, responsive styling
+- Shadcn UI components for consistent design
+- React Router for navigation
+- React Query for efficient data fetching
+- Lucide React for beautiful icons
+
+## Features
+
+- Responsive design optimized for all devices
+- Modern glass morphism effects
+- Smooth animations and transitions
+- Newsletter subscription
+- Blog post previews
+- Mobile-friendly navigation
 
 ## How can I edit this code?
 
@@ -10,7 +30,7 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a620a91d-5d34-47f3-a596-0935426a5b53) and start prompting.
+Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
@@ -36,33 +56,9 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/a620a91d-5d34-47f3-a596-0935426a5b53) and click on Share -> Publish.
+Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
 ## I want to use a custom domain - is that possible?
 
